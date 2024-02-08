@@ -1,0 +1,50 @@
+<html>
+
+<head>
+    <title> Selection and Projection page</title>
+    <script  type="text/javascript" src="select-project.js"> </script>
+</head>
+
+<body>
+    <section name="Home Directory">
+        <button type="button" onclick="location='main.php'">Home</button>
+    </section>
+    <section name="Selection">
+        <h1>Selection</h1>
+        <label for="selectTab">Avaiable data: </label>
+        <select name="selectTab" id="selectTab">
+            <option value="Virus3">Virus</option>
+            <option value="VaccineAgainst2">Vaccine</option>
+            <option value="ViralDisease">Disease</option>
+        </select><br></br>
+        <form>
+            <label for="CondiCount">Number of constraints: </label>
+            <input type="text" id="CondiCount" name="CondiCount"><br></br>
+        </form>
+        <button name="condButton" id="CondButton" type="button" onclick="selectFunc()">Create
+            conditions</button><br></br>
+        <div name="condDiv" id="condDiv"> </div>
+        <button name="selSubmit" id="selSubmit" type="submit" onclick="selSubmit()">Use The Condition</button>
+        <div name="subDiv" id="subDiv"> </div>
+        <hr>
+        <section name="Projection">
+            <h1>Projection</h1>
+            <label for="projTab">Available Data: </label>
+            <select name="projTab" id="projTab">
+                <option value="Virus3">Virus</option>
+                <option value="VaccineAgainst2">Vaccine</option>
+                <option value="ViralDisease">Disease</option>
+            </select><br></br>
+            <button name="projTable" id="projTable" type="projTable" onclick="projFunc()">Choose</button><br></br>
+            <div name="projDiv" id="projDiv"> </div>
+            <button name="projSubmit" id="selSubmit" type="submit" onclick="projSubmit()">Select Attributes</button>
+            <div name="projSub" id="projSub"> </div>
+        </section>
+        <hr>
+         <section>
+        <h1><Result:/h1>
+         </section>
+        
+</body>
+
+</html>

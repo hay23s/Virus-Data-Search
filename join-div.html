@@ -1,0 +1,38 @@
+<html>
+
+<head>
+    <title>RNA Virus And DNA Virus</title>
+    <script type="text/javascript" src="join-div.js"></script>
+</head>
+
+<body>
+    <section name="Home Directory">
+        <button type="button" onclick="location='main.php'">Home</button>
+    </section>
+    <section name="Join">
+    <h1>RNA Virus And DNA Virus</h1>
+    <br></br>
+    <label for="CondiCount">Number of constraints: </label>
+    <input type="text" id="CondiCount" name="CondiCount"><br></br>
+    <label for="join">Find The Information:</label>
+    <select id="joinSel" id="joinSel" onchange="joinCondFunc()">
+        <option>Choose Type</option>
+        <option value="RNA Virus">RNA Virus</option>
+        <option value="DNA Virus">DNA Virus</option>
+    </select>
+    <div name="condDiv" id="condDiv"> </div>
+    <button name="selSubmit" id="selSubmit" type="submit" onclick="selSubmit()">Use The Condition</button>
+    <div name="subDiv" id="subDiv"> </div>
+    <hr>
+    </section>
+    <section name="Divide">
+        <form method="POST" action="join-div.php">
+            <input type="hidden" name="divSubmit"></input>
+            <label for="Submit">Find DNA Viruses infect all hosts</label>
+            <input type="submit"></input>
+        </form>
+    </section>
+    
+</body>
+
+</html>
